@@ -33,15 +33,19 @@ Chaque entree doit contenir `assetPath` et soit `sourceFile`, soit `sourceUrl`. 
 
 ## Build
 
-Le projet a ete valide avec Gradle 8.13. Le Gradle systeme 9.x peut etre incompatible avec Android Gradle Plugin 8.2.0.
+Le projet utilise le wrapper Gradle 8.13. Le Gradle systeme 9.x peut etre incompatible avec Android Gradle Plugin 8.2.0.
 
 ```bash
-GRADLE_USER_HOME=/tmp/scales-gradle-home /home/kassabji/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13/bin/gradle --no-daemon testDebugUnitTest
-GRADLE_USER_HOME=/tmp/scales-gradle-home /home/kassabji/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13/bin/gradle --no-daemon assembleDebug
+./gradlew --no-daemon testDebugUnitTest
+./gradlew --no-daemon assembleRelease
 ```
 
-L'APK debug est genere dans :
+L'APK release de prototype est signe avec la cle debug Android et genere dans :
 
 ```text
-app/build/outputs/apk/debug/app-debug.apk
+app/build/outputs/apk/release/app-release.apk
 ```
+
+## Release
+
+Le workflow GitHub Actions `.github/workflows/android.yml` execute les tests, construit l'APK release et publie un asset telechargeable quand un tag `v*` est pousse, par exemple `v0.1.0`.
