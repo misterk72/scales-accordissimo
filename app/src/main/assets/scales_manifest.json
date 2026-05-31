@@ -1,0 +1,34 @@
+[
+  {
+    "key": "c",
+    "mode": "major",
+    "transposition": "ut",
+    "pitchHz": 440,
+    "octaves": 1,
+    "register": "medium",
+    "tempoBpm": 88,
+    "arrangement": "piano",
+    "assetPath": "scales/ut/440/major/c/1/medium/88/piano.mp3",
+    "durationMs": 3000,
+    "signature": "0",
+    "leadingTone": "Si",
+    "melodicAscending": "Do Re Mi Fa Sol La Si Do",
+    "melodicDescending": "Do Si La Sol Fa Mi Re Do"
+  },
+  {
+    "key": "g",
+    "mode": "major",
+    "transposition": "ut",
+    "pitchHz": 440,
+    "octaves": 1,
+    "register": "medium",
+    "tempoBpm": 88,
+    "arrangement": "piano",
+    "assetPath": "scales/ut/440/major/g/1/medium/88/piano.mp3",
+    "durationMs": 0,
+    "signature": "1#",
+    "leadingTone": "Fa #",
+    "melodicAscending": "Sol La Si Do Re Mi Fa# Sol",
+    "melodicDescending": "Sol Fa# Mi Re Do Si La Sol"
+  }
+]

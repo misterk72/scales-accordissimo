@@ -1,0 +1,10 @@
+[
+  {
+    "sourceFile": "/path/to/authorized/c-major-88-piano.mp3",
+    "assetPath": "scales/ut/440/major/c/1/medium/88/piano.mp3"
+  },
+  {
+    "sourceUrl": "https://example.com/authorized/g-major-88-piano.mp3",
+    "assetPath": "scales/ut/440/major/g/1/medium/88/piano.mp3"
+  }
+]
